@@ -1,0 +1,28 @@
+{
+  "name": "portfolio/magical-3d",
+  "type": "project",
+  "description": "SEO-first single-route 3D portfolio with Laravel + Inertia + React + R3F",
+  "require": {
+    "php": "^8.0",
+    "laravel/framework": "^9.52",
+    "inertiajs/inertia-laravel": "^0.6.11",
+    "filament/filament": "^2.17"
+  },
+  "require-dev": {
+    "fakerphp/faker": "^1.20"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "app/",
+      "Database\\Factories\\": "database/factories/",
+      "Database\\Seeders\\": "database/seeders/"
+    }
+  },
+  "scripts": {
+    "post-autoload-dump": [
+      "@php artisan package:discover --ansi"
+    ]
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true
+}
