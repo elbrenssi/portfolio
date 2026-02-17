@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: light dark; }
+body { @apply min-h-screen bg-slate-100 text-slate-900 dark:bg-slate-950 dark:text-slate-100; }
+.magic-card { transform-style: preserve-3d; transition: transform .2s ease, box-shadow .2s ease; }
+.magic-card:hover { transform: rotateX(4deg) rotateY(-4deg); box-shadow: 0 12px 42px rgba(56,189,248,.25); }
